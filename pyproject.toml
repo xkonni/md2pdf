@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "md2pdf"
+version = "0.1.0"
+description = "convert markdown into pdf, accepts optional css file"
+authors = ["Konstantin Koslowski <konstantin.koslowski@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+markdown = "^3.2.1"
+markdown-include = "^0.5.1"
+weasyprint = "^51"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+md2pdf = "md2pdf.main:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
